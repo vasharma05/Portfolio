@@ -1,0 +1,146 @@
+@font-face{
+    font-family: Blackboard;
+    src: url("../Fonts/Blackboard.ttf")
+}
+@font-face{
+    font-family: Typewriter;
+    src: url("../Fonts/Typewriter.ttf")
+}
+body{
+    /* color: white; */
+    margin: 0;
+    padding: 0;
+}
+#root{
+    /* color: white; */
+    font-family: Typewriter;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+}
+h3{
+    margin-top:0;
+}
+
+
+.intro{
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.intro-left{
+    width: 48%;
+    padding: 2%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.name{
+    font-family: Blackboard;
+    font-size: 5vmax;
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+}
+.name span{
+    color: #C21807;
+}
+.intro-left h3{
+    opacity: 0.7;
+    font-style: italic;
+    font-size: 1.75vmax;
+}
+.intro h3:hover{
+    opacity: 1;
+}
+.intro-left p{
+    /* width: 80%; */
+    margin: 0 auto;
+    font-size: 1.5vmax;
+    text-align: justify;
+}
+.intro-right{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    /* padding: 2%; */
+    background-color: #050934;
+}
+.pic{
+    align-self: center;
+    width: 25vw;
+    position: absolute;
+    margin: 0;
+    margin-left: 18%;
+    padding: 12px;
+    border: 2px solid white;
+}
+.intro-left>div{
+    width: 80%;
+    margin: 12px auto;
+    padding: 2%;
+    display: flex;
+    justify-content: space-around;
+}
+.intro-left>div a{
+    margin: 2%;
+    padding: 2.5% 0;
+    width: 96%;
+}
+.intro-left>div a:nth-child(1){
+    color: #C21807;
+    border: 2px solid #C21807;
+}
+.intro-left>div a:nth-child(2){
+    color: white;
+    border: 2px solid #C21807;
+    background-color: #C21807;
+    opacity: 0.9;
+}
+.intro-left>div a:nth-child(2):hover{
+    opacity: 1;
+}
+
+@media only screen and (max-width:480px){
+    .intro{
+        flex-direction: column-reverse;
+    }
+    .intro-left, .intro-right{
+        width: 96%;
+        padding: 2%;
+    }
+    .intro-right{
+        height: 25%;
+    }
+    .intro-left{
+        height: 75%;
+        justify-content: end;
+    }
+    .name{
+        font-size: 7.5vmax;
+    }
+    .intro-right{
+        justify-content: center;
+    }
+    .pic{
+        width: 25vmax;
+        margin: 12.5vh auto 0 auto;
+    }
+    .intro-left h3{
+        font-size: 2vmax;
+    }
+    .intro-left  p{
+        font-size: 1.75vmax
+    }
+    .intro-left>div{
+        flex-direction: column;
+    }
+}

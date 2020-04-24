@@ -1,0 +1,12 @@
+.burger-icon{
+    position: absolute;
+    height: 28px;
+    top: 12px;
+    left: 12px;
+}
+.burger-icon span{
+    height: 16px;
+    background-color: white;
+    width: 20px;
+    margin-top: 4px;
+}
