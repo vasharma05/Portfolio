@@ -1,0 +1,39 @@
+.experience{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+.card-container{
+    height: 80%;
+    width: 100%;
+    /* margin-top: 5%; */
+    display: flex; 
+    justify-content: space-around;
+}
+.card{
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 2%;
+}
+.card-left{
+    /* width: 60%; */
+}
+.card-right{
+    /* width: 36%; */
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-right a{
+    width: 80%;
+    border: 2px solid #050934;
+    padding: 1%;
+}
+img{
+    width: 100%;
+    box-shadow: -5px 5px 10px #00000060;
+
+}

@@ -1,0 +1,24 @@
+.skills-container{
+    flex-wrap: wrap;
+    background-color: #050934;
+    border: 7px solid #C21807;
+    padding: 2%;
+    color: white;
+}
+.skills p{
+    font-size: 1.75rem;
+    text-decoration: underline;
+}
+.skills span{
+    padding: 1% 2%;
+    border-right: 3px solid #C21807;
+    margin-top: 1.5%;
+    /* width: 150px; */
+    display: inline-block;
+    text-align: center;
+    /* font-size: 1.5rem; */
+    letter-spacing: 0.25rem;
+}
+.imp{
+    font-size: 1.5rem;
+}

@@ -5,7 +5,7 @@ class Face extends React.Component{
     render(){
         return(
             <div className="container">
-                <div className="content intro">
+                <div className="intro">
                     <div className="intro-left">
                         <h1 className="name">Hello! I am <span>Vineet Sharma</span></h1>
                         <h3>Student, National Institute of Technology Hamirpur</h3>

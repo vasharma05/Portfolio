@@ -6,7 +6,7 @@
 h2{
     min-height: 10% !important;
     font-size: 5vmax;
-    margin: 0;
+    margin-top: 0;
     text-decoration: underline;
 }
 .education table{
@@ -16,14 +16,14 @@ h2{
 }
 th,td{
     padding: 1%;
-    border-top : 1px solid #aaaaaa;
 }
 td{
     font-size: 1.25vmax;
+    border : 1px solid #aaaaaa;
 }
 th{
     font-size: 1vmax;
-    background-color: #050934;
+    background-color: #ffffff20;
     color: white;
     width: 15%;
 }

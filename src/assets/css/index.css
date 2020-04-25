@@ -10,19 +10,25 @@
     font-family: Creamy;
     src: url("../Fonts/Creamy.ttf")
 }
-@font-face{
+/* @font-face{
     font-family: Script;
     src: url("../Fonts/Script.otf")
-}
+} */
 body{
     /* color: white; */
     margin: 0;
     padding: 0;
+    /* background-color: black; */
+    background-image: url("../img/vector.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 #root{
     /* height: 80vh; */
     /* color: white; */
     font-family: Typewriter;
+    /* background-color: #C2180740; */
 }
 
 a{
@@ -32,8 +38,10 @@ a{
 a:hover{
     text-decoration: none;
 }
-h3,h2{
-    margin-top:0;
+h3{
+    /* margin-top:0; */
+    font-size: 2.5em;
+    margin: 0;
 }
 p{
     text-align: justify;
@@ -46,12 +54,12 @@ p{
 .script{
     font-family: Script;
     font-weight: normal;
-
+    font-size: 1.25em;
 }
 .creamy{
     font-family: creamy;
     font-weight: normal;
-
+    font-size: 1.25em;
 }
 .red{
     color: #C21807;
@@ -60,8 +68,11 @@ p{
     font-weight: bold;
 }
 .heading{
-    font-size: 5vmax;
+    font-size: 3vmax;
     text-decoration: underline;
+    font-family: Creamy;
+    color: white;
+    text-align: center;
 }
 
 .container{
@@ -77,6 +88,10 @@ p{
     width: 80%;
     padding: 2vh 2vw;
     box-shadow: -5px 5px 10px grey;
+    background-color: #050934;
+    color: white;
+    /* outline-offset: 20px; */
+    outline: 20px solid #ffffff40
 }
 .intro{
     display: flex;
@@ -84,6 +99,13 @@ p{
     justify-content: space-between;
     position: relative;
     /* padding: 0; */
+    background-color: white;
+    color: black;
+    outline: 0;
+    outline-offset: 0;
+    height: 80vh;
+    width: 80vw;
+    outline: 20px solid #ffffff20
 }
 .intro-left{
     width: 48%;
@@ -100,7 +122,7 @@ p{
     padding: 0;
     margin: 0;
     font-weight: normal;
-    color: black;
+    /* color: white; */
 }
 .name span{
     color: #C21807;
