@@ -6,16 +6,25 @@
     font-family: Typewriter;
     src: url("../Fonts/Typewriter.ttf")
 }
+@font-face{
+    font-family: Creamy;
+    src: url("../Fonts/Creamy.ttf")
+}
+@font-face{
+    font-family: Script;
+    src: url("../Fonts/Script.otf")
+}
 body{
     /* color: white; */
     margin: 0;
     padding: 0;
 }
 #root{
+    /* height: 80vh; */
     /* color: white; */
     font-family: Typewriter;
-
 }
+
 a{
     text-decoration: none;
     color: black;
@@ -23,16 +32,58 @@ a{
 a:hover{
     text-decoration: none;
 }
-h3{
+h3,h2{
     margin-top:0;
 }
+p{
+    text-align: justify;
+}
 
+.blackboard{
+    font-family: Blackboard;
+    font-weight: normal;
+}
+.script{
+    font-family: Script;
+    font-weight: normal;
 
-.intro{
+}
+.creamy{
+    font-family: creamy;
+    font-weight: normal;
+
+}
+.red{
+    color: #C21807;
+}
+.bold{
+    font-weight: bold;
+}
+.heading{
+    font-size: 5vmax;
+    text-decoration: underline;
+}
+
+.container{
     height: 100vh;
+    width: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid;
+}
+.content{
+    height: 80%;
+    width: 80%;
+    padding: 2vh 2vw;
+    box-shadow: -5px 5px 10px grey;
+}
+.intro{
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    position: relative;
+    /* padding: 0; */
 }
 .intro-left{
     width: 48%;
@@ -45,10 +96,11 @@ h3{
 }
 .name{
     font-family: Blackboard;
-    font-size: 5vmax;
+    font-size: 4vmax;
     padding: 0;
     margin: 0;
     font-weight: normal;
+    color: black;
 }
 .name span{
     color: #C21807;
@@ -56,18 +108,19 @@ h3{
 .intro-left h3{
     opacity: 0.7;
     font-style: italic;
-    font-size: 1.75vmax;
+    font-size: 1.25vmax;
 }
-.intro h3:hover{
+h3:hover{
     opacity: 1;
 }
 .intro-left p{
     /* width: 80%; */
     margin: 0 auto;
-    font-size: 1.5vmax;
+    font-size: 1vmax;
     text-align: justify;
 }
 .intro-right{
+    position: relative;
     width: 40%;
     display: flex;
     align-items: center;
@@ -76,10 +129,11 @@ h3{
 }
 .pic{
     align-self: center;
-    width: 25vw;
+    width: 20vmax;
+    /* right:-20px; */
     position: absolute;
     margin: 0;
-    margin-left: 18%;
+    margin-left: 15vw;
     padding: 12px;
     border: 2px solid white;
 }
