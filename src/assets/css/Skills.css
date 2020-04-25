@@ -18,7 +18,16 @@
     text-align: center;
     /* font-size: 1.5rem; */
     letter-spacing: 0.25rem;
+    color: #050934;
+    background-color: white;
 }
 .imp{
     font-size: 1.5rem;
+}
+.contd{
+    padding: 1%;
+    border: 2px solid #C21807
+}
+.skills span:nth-last-child(1){
+    border: 0
 }
