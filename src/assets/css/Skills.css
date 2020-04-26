@@ -5,11 +5,14 @@
     padding: 2%;
     color: white;
 }
+.skills{
+    overflow: scroll;
+}
 .skills p{
     font-size: 1.75rem;
     text-decoration: underline;
 }
-.skills span{
+.skills-container span{
     padding: 1% 2%;
     border-right: 3px solid #C21807;
     margin-top: 1.5%;

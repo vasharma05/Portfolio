@@ -3,7 +3,6 @@ import "./assets/css/Skills.css"
 
 function Skills(){
     return (
-        <div>
             <div className="container">
                 <div className="content skills">
                     <h2 className="heading red">Have a look on my technical skills</h2>
@@ -14,11 +13,7 @@ function Skills(){
                         <p className="red">Back End Development</p>
                         <span className="imp">Django-Python Web Framework</span><span className="imp">Django REST Framework</span><span>Firebase</span><span>Database Management System</span><span>SQl</span><span>MongoDB</span><span>PHP</span>
                     </div>
-                </div>
-            </div>
-            <div className="container">
-                <div className="content skills">
-                    <div className="skills-container creamy">
+                    {/* <div className="skills-container creamy">
                         <h3 className="blackboard">Python</h3>
                         <span>Django</span><span>Numpy</span><span>Pandas</span><span>OpenCV</span>
                     </div>
@@ -31,10 +26,9 @@ function Skills(){
                         <li>Class Representative of my Batch for the last 2 years!</li>
                         <li>Vice Media Coordinator at Robotics Society NIT Hamirpur</li>
                         <li>Active Member of GNU Linux User Group NIT-H (GLUG-NITH)</li>
-                    </ul>
+                    </ul> */}
                 </div>
             </div>
-        </div>
     )
 }
 export default Skills

@@ -1,0 +1,41 @@
+.projects{
+    /* min-height: 80vh; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.projects .card{
+    position: relative;
+    height: 50%;
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    /* flex-wrap: wrap; */
+}
+/* .projects .card{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+.projects h3{
+    text-align: center;
+    background-color: #ffffff;
+    color: #c21807;
+    font-size: 4em;
+    margin: 0;
+}
+.projects .card:hover .front{
+    display: none;
+}
+.projects .rear{
+    display: none;
+    background-color: #05093480;
+    padding: 1%;
+}
+.projects .card:hover .rear{
+    display: block;
+}
+/* .projects .card:nth-child(2){
+    background-image: url(../img/Blog.jpg);
+} */

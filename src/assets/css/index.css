@@ -29,9 +29,13 @@ body{
     /* color: white; */
     font-family: Typewriter;
     /* background-color: #C2180740; */
-
+    transition: margin-left 0.5s ease-in-out;
 }
-
+#App{
+    position: relative;
+    display: flex;
+    overflow-x: hidden;
+}
 a{
     text-decoration: none;
     color: black;
@@ -79,36 +83,33 @@ p{
 }
 
 .container{
-    height: 100vh;
-    width: 100;
+    height: 100;
+    min-width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid;
+    /* border: 2px solid; */
+    /* z-index: 0; */
 }
 .content{
-    height: 80%;
-    width: 80%;
-    padding: 2vh 2vw;
-    box-shadow: -5px 5px 10px grey;
+    height: 80vh;
+    width: 80vw;
+    padding: 1vh 2vw;
+    margin: 8vh 0;
+    /* box-shadow: -5px 5px 10px grey; */
     background-color: #050934;
     color: white;
     /* outline-offset: 20px; */
-    outline: 20px solid #ffffff40
 }
 .intro{
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    position: relative;
-    /* padding: 0; */
+    padding: 0;
     background-color: white;
     color: black;
-    outline: 0;
-    outline-offset: 0;
-    height: 80vh;
-    width: 80vw;
-    outline: 20px solid #ffffff20
+    margin: 9vh 0;
+    /* padding: 0; */
 }
 .intro-left{
     width: 48%;
@@ -145,7 +146,6 @@ h3:hover{
     text-align: justify;
 }
 .intro-right{
-    position: relative;
     width: 40%;
     display: flex;
     align-items: center;
