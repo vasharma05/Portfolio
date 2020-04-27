@@ -2,6 +2,7 @@
     /* min-height: 80vh; */
     display: flex;
     flex-wrap: wrap;
+    overflow: auto;
 }
 .projects .card{
     position: relative;
@@ -22,7 +23,7 @@
     text-align: center;
     background-color: #ffffff;
     color: #c21807;
-    font-size: 4em;
+    font-size: 4vmax;
     margin: 0;
 }
 .projects .card:hover .front{
@@ -39,3 +40,30 @@
 /* .projects .card:nth-child(2){
     background-image: url(../img/Blog.jpg);
 } */
+
+@media only screen and (max-width:768px){
+    .projects .heading{
+        font-size: 4vmax;
+    }
+    .projects h3{
+        text-align: center;
+        background-color: #ffffff;
+        color: #c21807;
+        font-size: 4vmax;
+        margin: 0;
+    }
+    .projects .card{
+        width: 48%;
+    }
+    .projects h4{
+        font-size: 1.5vmax;
+    }
+}
+@media only screen and (max-width: 500px){
+    .projects .card:nth-child(1){
+        height: 25%;
+    }
+    .projects .card{
+        width: 98%;
+    }
+}

@@ -2,11 +2,21 @@ import React from "react"
 import "./assets/css/Projects.css"
 import Card from "./Card"
 
+function closeSidebar(event){
+    let sidebar = document.getElementById("sidebar")
+    if(window.innerWidth<=500){
+        sidebar.style.left = "-60vw"
+    }else if(window.innerWidth<=768){
+        sidebar.style.left = "-40vw"
+    }else{
+        sidebar.style.left = "-30vw"
+    }
+}
 class Projects extends React.Component{
     render(){
         return(
             <div className="container">
-                <div className = "content projects">
+                <div className = "content projects" onClick={closeSidebar}>
                     <div className="card">
                         <h2 className="creamy heading">Projects</h2>
                     </div>

@@ -43,3 +43,6 @@ th{
 .education a{
     color: rgb(111, 50, 168)
 }
+@media only screen and (max-width: 768px){
+    
+}

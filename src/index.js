@@ -10,10 +10,11 @@ import Projects from "./Projects"
 import HireMe from "./HireMe"
 import Others from './Others'
 
+
 function App(){
     return (
         <div id="App">
-            <Header />
+            <Header/>
             <Face />
             <Education /> 
             <Experience />

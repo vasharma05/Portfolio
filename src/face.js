@@ -1,11 +1,22 @@
 import React from "react"
 import logo from "./assets/img/Me.jpg"
 import "./assets/css/index.css"
+
+function closeSidebar(event){
+    let sidebar = document.getElementById("sidebar")
+    if(window.innerWidth<=500){
+        sidebar.style.left = "-60vw"
+    }else if(window.innerWidth<=768){
+        sidebar.style.left = "-40vw"
+    }else{
+        sidebar.style.left = "-30vw"
+    }
+}
 class Face extends React.Component{
     render(){
         return(
             <div className="container">
-                <div className="content intro">
+                <div className="content intro" onClick={closeSidebar}>
                     <div className="intro-left">
                         <h1 className="name">Hello! I am <span>Vineet Sharma</span></h1>
                         <h3>Student, National Institute of Technology Hamirpur</h3>

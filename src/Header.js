@@ -3,14 +3,23 @@ import "./assets/css/Header.css"
 import rightArrow from "./assets/img/arrow-right.png"
 import leftArrow from "./assets/img/arrow-left.png"
 
+import git from "./assets/img/github.png"
+import  linkedin from "./assets/img/linkedin.png"
+
 function openSidebar(){
     let sidebar = document.getElementById("sidebar")
     sidebar.style.left = "0"
 }
 function closeSidebar(event){
     let sidebar = document.getElementById("sidebar")
-    if (event.target === sidebar){
-        sidebar.style.left = "-20vw"
+    if (event.target === sidebar ){
+        if(window.innerWidth<=500){
+            sidebar.style.left = "-60vw"
+        }else if(window.innerWidth<=768){
+            sidebar.style.left = "-40vw"
+        }else{
+            sidebar.style.left = "-30vw"
+        }
     }
 }
 class Header extends React.Component{
@@ -27,6 +36,8 @@ class Header extends React.Component{
         let target = event.target.getAttribute("target")
         root.style.marginLeft = -target*100 + "vw"
         this.setState({"section":parseInt(target)})
+        event.target = document.getElementById("sidebar")
+        closeSidebar(event)
     }
 
 
@@ -36,20 +47,23 @@ class Header extends React.Component{
         let list = ["About Me","Education","Work Experience","Skills","Projects","Activities","Hire Me"]
         return (
                 <header className="header" onClick={()=>{console.log("help")}}>
+                    <div onMouseOver={openSidebar} id="burger_icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                     <div className="taskbar">
-                        <div onMouseOver={openSidebar} id="burger_icon">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                        </div>
-                        <h2 className="heading">{"<vasharma05 />"}</h2>
+                        <h3 className="creamy brand">{"<vasharma05 />"}</h3>
                     </div>
                     <div className="navigation">
                             { section ? <div><img className="left-arrow" onClick={this.slide} target={section-1} src={leftArrow} alt="left arrow" /><p>{list[section-1]}</p></div>: <div></div>}
-                            <ul className="links">
-                                <li className="heading">sharmava05@gmail.com</li>
-                            </ul>
                             { section+1 !== list.length? <div><p>{list[section+1]}</p><img className="right-arrow" target={section+1} onClick={this.slide} src={rightArrow} alt="right arrow" /></div>:<div></div>}
+                    </div>
+                    <div className="links">
+                        <ul>
+                            <li><a href="https://github.com/vasharma05"><img src={git} alt="linkedin" /></a></li>
+                            <li><a href="https://linkedin.com/in/vasharma05"><img src={linkedin} alt="linkedin" /></a></li>
+                        </ul>
                     </div>
                     <div id="sidebar" onMouseOut={closeSidebar} >
                         <ul className="blackboard" onMouseOver={openSidebar}>

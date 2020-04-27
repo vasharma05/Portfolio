@@ -8,12 +8,12 @@ function Card(props){
     return(
         <div className="card">
             <div className="front">
-                <h3 className="script">{props.name}</h3>
+                <h3 className="blackboard">{props.name}</h3>
             </div>
             <div className="rear">
-                <h4>{props.description}</h4>
+                <p>{props.description}</p>
                 <div className="skills-container creamy">
-                    <h4>Technologies Used</h4>
+                    <p>Technologies Used</p>
                     {techs}
                 </div>
             </div>

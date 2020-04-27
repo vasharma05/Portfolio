@@ -11,14 +11,26 @@
     justify-content: space-around;
 }
 .experience .card{
-    /* width: 100%; */
+    width: 92%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     flex-direction: column;
     padding: 2%;
+    margin: 0 2%;
+    background-size: cover;
+    background-position: center;
+}
+.experience .card:nth-child(1){
+    /* background-image: url("../img/Westvindh.png"); */
+}
+.experience .card:nth-child(2){
+    /* background-image: url("../img/CMS.PNG"); */
 }
 .experience .card-left{
-    /* width: 60%; */
+    padding: 2%;
+    background-color: #ffffff;
+    color: black;
 }
 .experience .card-right{
     /* width: 36%; */
@@ -35,4 +47,25 @@
 .experience img{
     width: 100%;
     box-shadow: -5px 5px 10px #00000060;
+}
+.company{
+    font-size: 4vmax;
+}
+.experience .description{
+    font-size: 1.5vmax;
+}
+.experience h4{
+    margin: 0;
+    font-size: 2vmax;
+}
+@media only screen and (max-width:768px){
+    .experience .card-container{
+        flex-direction: column;
+    }
+    .experience .card{
+        width: 96%;
+        /* height: 50%; */
+        padding: 2%;
+        margin: 0;
+    }
 }

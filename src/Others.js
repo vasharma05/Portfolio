@@ -1,10 +1,20 @@
 import React from "react"
 import "./assets/css/Others.css"
 
+function closeSidebar(event){
+    let sidebar = document.getElementById("sidebar")
+    if(window.innerWidth<=500){
+        sidebar.style.left = "-60vw"
+    }else if(window.innerWidth<=768){
+        sidebar.style.left = "-40vw"
+    }else{
+        sidebar.style.left = "-30vw"
+    }
+}
 function others(){
     return(
         <div className="container">
-            <div className="content others">
+            <div className="content others" onClick={closeSidebar}>
                 <h3 className="heading creamy">Achievements</h3>
                 <ul>
                     <li>Best Intern Award at T.C.I.L, New Delhi</li>

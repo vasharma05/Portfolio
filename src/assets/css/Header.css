@@ -10,30 +10,37 @@ header{
     height: 8vh;
     width: 96%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    padding: 0 2%;
+    padding: 1vh 2%;
     position: fixed;
     top:0;
     left: 0;
-    z-index: 3;
+    z-index: 1;
 }
 .taskbar h2{
     /* font-size: 2vmax; */
     margin: 0;
 }
 #burger_icon{
+    /* height: 4vh; */
+    position: fixed;
     display: block;
-    padding: 2%;
+    padding:2%;
     z-index: 100;
     cursor: pointer;
+    top:1vh;
+    left: 2vw;
+    display: flex;
+    flex-direction: column;
+    
 }
 #burger_icon span{
     display: block;
     height: 5px;
     background-color: white;
     width: 40px;
-    margin-top: 5px;
+    margin-top: 4px;
     border-radius: 2px;
     transition: transform 0.2s ease-in-out;
     transition: margin 0.2s ease-in-out;
@@ -55,10 +62,10 @@ header{
 }
 #sidebar{
     height: 100vh;
-    width: 16vw;
-    padding: 0 2%;
+    width: 22vw;
+    padding: 0 4%;
     top: 0;
-    left: -20vw;
+    left: -30vw;
     position: fixed;
     display: flex;
     justify-content: flex-start;
@@ -74,6 +81,7 @@ header{
     list-style: none;
     width: 100%;
     margin: 0;
+    padding: 0;
 }
 #sidebar li{
     cursor: pointer;
@@ -110,18 +118,22 @@ header{
     align-items: center;
     position: fixed;
     bottom: 0;
+    z-index :2;
+
 }
 .navigation div{
+    height: 100%;
     display: flex;
+    align-items: center;
     cursor: pointer;
 }
 .navigation div>*{
     /* margin-left: 48px */
 }
 .navigation div img{
-    height: 50px;
+    height: 80%;
     background-color: #ffffff;
-    border-radius: 25px;
+    border-radius: 50%;
     opacity: 0.8;
 }
 .navigation div:hover img{
@@ -144,6 +156,82 @@ header{
     list-style: none;
     color: white;
 }
-/* .navigation .links .heading{
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    height: 100%;
+    width: 8vw;
+    top: 0;
+    right: 0;
+    z-index: 0;
+}
+.links ul{
+    list-style: none;
     margin: 0;
-} */
+    padding: 0;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.links li{
+    margin-bottom: 25px;
+}
+.links img:hover{
+    box-shadow: 0 0 10px #000000;
+}
+.links ul img{
+    width: 100%;
+}
+.brand{
+    color: white;
+    font-size: 3vmax;
+}
+@media only screen and (max-width: 768px){
+    .burger_icon span{
+        height: 0.5vmax;
+    }
+    .brand{
+        color: white;
+        font-size: 3vmax;
+    }
+    #sidebar{
+        height: 100vh;
+        width: 36vw;
+        padding: 0 2%;
+        top: 0;
+        left: -40vw;
+        position: fixed;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: #00000080;
+        transition: left 0.5s ease-in-out;
+        z-index: 2;
+    }
+    .navigation p{
+        font-family: script;
+        color: white;
+        font-size: 3.5vmax;
+        margin: 0;
+    }
+    .navigation div img{
+        height: 5vmax;
+    }
+    .navigation div:nth-child(1) img{
+        margin-right: 12px;
+    }
+    .navigation div:nth-child(2) img{
+        margin-left: 12px;  
+    }
+}
+@media only screen and (max-width: 500px){
+    #sidebar{
+        width: 56vw;
+        left: -60vw;
+        background-color: #00000090;
+    }
+}
